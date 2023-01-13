@@ -15,7 +15,7 @@ const Nav = () => {
     }
     const customStyles = {
         content: {
-            borderRadius:'10px',
+            borderRadius: '10px',
             top: '50%',
             left: '50%',
             right: 'auto',
@@ -26,30 +26,37 @@ const Nav = () => {
     };
     return (
         <nav>
-            <ul className='flex bg-slate-900 text-white lg:justify-center md:justify-center'>
-                <li className='m-5 cursor-pointer hidden lg:block md:block'>
-                    Contact
-                </li>
-                <li className='m-5 cursor-pointer hidden lg:block md:block'>
-                    Github
-                </li>
-                <li className='m-5 cursor-pointer hidden lg:block md:block'>
-                    LinkedIn
-                </li>
-                <li className='m-5 cursor-pointer hidden lg:block md:block'>
-                    Reusme
-                </li>
-                <li onClick={openModal} className='m-5 lg:hidden md:hidden'>
+            <ul className='flex bg-slate-900 text-white justify-between'>
+                <li onClick={openModal} className='m-5 md:mr-20 lg:invisible md:invisible'>
                     <MenuIcon />
                 </li>
-                <Modal
-                    isOpen={modalIsOpen}
-                    onRequestClose={closeModal}
-                    style={customStyles}
-                >
-                    <Mobilenav />
-                </Modal>
+                <div className='flex'>
+                    <Link className='m-5 cursor-pointer hidden lg:block md:block'>
+                        Contact
+                    </Link>
+                    <Link className='m-5 cursor-pointer hidden lg:block md:block'>
+                        Github
+                    </Link>
+                    <Link className='m-5 cursor-pointer hidden lg:block md:block'>
+                        LinkedIn
+                    </Link>
+                    <Link className='m-5 cursor-pointer hidden lg:block md:block'>
+                        Resume
+                    </Link>
+                </div>
+                <li className='m-5'>
+                    Kirran Kirpalani
+                </li>
+
             </ul>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={closeModal}
+                style={customStyles}
+            >
+                <Mobilenav />
+            </Modal>
+
         </nav>
     );
 }
