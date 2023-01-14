@@ -44,7 +44,7 @@ const Nav = () => {
                     {!copied && <a onClick={copyContact} target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
                         Contact
                     </a>}
-                    {copied && <a className='m-5'>Email Copied!</a>}
+                    {copied && <a className='m-5'>✉️ Email Copied!</a>}
                     <a href='https://www.github.com/kirran01' target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
                         Github
                     </a>
