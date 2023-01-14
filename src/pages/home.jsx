@@ -1,27 +1,33 @@
 import React from 'react';
 import Project from '../components/project';
-
+import Birkbecklogo from '../../public/img/birkbeck.png'
+import Ironhacklogo from '../../public/img/ih.png'
+import GAlogo from '../../public/img/gA2.png'
+import DUlogo from '../../public/img/DU.png'
+import Gameicon from '../../public/img/CONTROLLER.png'
+import Totoro from '../../public/img/TOTORO.png'
+import Taskmanage from '../../public/img/TASKS.png'
 
 const Home = () => {
     const projs = [
         {
             title: 'JS Brickbreaker',
             stack: 'HTML5, CSS3, Javascript',
-            image: '../../public/CONTROLLER.png',
+            image: Gameicon,
             repo: 'https://github.com/kirran01/Brickbreaker',
             site: 'https://kirran01.github.io/Brickbreaker/'
         },
         {
             title: 'Studio Ghibli Archive',
             stack: 'HTML5, CSS3, NodeJS, HBS, Express, MongoDB',
-            image: '../../public/TOTORO.png',
+            image: Totoro,
             repo: 'https://github.com/kirran01/Studio-Ghibli-Archive',
             site: 'https://ghibliarchive.fly.dev/'
         },
         {
             title: 'Task Manager',
             stack: 'ReactJS, CSS3, NodeJs, Express, MongoDB',
-            image: '../../public/TASKS.png',
+            image: Taskmanage,
             repo: 'https://github.com/kirran01/planner-frontend',
             site: 'https://task-manager-kk.netlify.app/'
         }
@@ -48,7 +54,7 @@ const Home = () => {
                 <div className='m-5'>
                     <p className='text-xl'>Masters Degree</p>
                     <div className='flex justify-center flex-col lg:flex-row md:flex-row items-center'>
-                        <img className='h-9 rounded m-5' src="../../public/img/birkbeck.png" alt="" />
+                        <img className='h-9 rounded m-5' src={Birkbecklogo} alt="" />
                         <p className='text-lg'>University of Birkbeck London</p>
                     </div>
                     <p>Health and Clinical Psychological Sciences</p>
@@ -56,7 +62,7 @@ const Home = () => {
                 <div className='m-5'>
                     <p className='text-xl'>Bachelors Degree</p>
                     <div className='flex justify-center flex-col lg:flex-row md:flex-row items-center'>
-                        <img className='h-10 m-5' src="../../public/img/DU.png" alt="" />
+                        <img className='h-10 m-5' src={DUlogo} alt="" />
                         <p className='text-lg'>University of Denver</p>
                     </div>
                     <p>Psychology & Emerging Digital Practices</p>
@@ -65,15 +71,15 @@ const Home = () => {
             <div className='flex flex-col justify-center'>
                 <h1 className='text-4xl m-5'>Certifications</h1>
                 <div className='flex flex-col justify-center m-5'>
-                    <div  className='flex justify-center flex-col lg:flex-row md:flex-row items-center'>
-                        <img className='h-10 m-5' src="../../public/img/ih.png" alt="" />
+                    <div className='flex justify-center flex-col lg:flex-row md:flex-row items-center'>
+                        <img className='h-10 m-5' src={Ironhacklogo} alt="" />
                         <p className='text-xl'>Ironhack Web Development Immersive</p>
                     </div>
                     <p className='m-5'>Intensive web development bootcamp focusing on MERN stack</p>
                 </div>
                 <div className='m-5'>
                     <div className='flex justify-center items-center flex-col lg:flex-row md:flex-row'>
-                        <img className='h-10 m-5' src="../../public/img/gA2.png" alt="" />
+                        <img className='h-10 m-5' src={GAlogo} alt="" />
                         <p className='text-xl'>General Assembly Software Engineering Immersive</p>
                     </div>
                     <p className='m-5'>Intensive software engineering bootcamp focusing on MERN stack</p>
