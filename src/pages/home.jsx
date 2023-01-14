@@ -47,16 +47,16 @@ const Home = () => {
                 <h1 className='text-4xl m-5'>Education</h1>
                 <div className='m-5'>
                     <p className='text-xl'>Masters Degree</p>
-                    <div className='flex justify-center items-center'>
-                        <img className='h-9 rounded m-5' src="../../public/birkbeck.png" alt="" />
+                    <div className='flex justify-center flex-col lg:flex-row md:flex-row items-center'>
+                        <img className='h-9 rounded m-5' src="../../public/img/birkbeck.png" alt="" />
                         <p className='text-lg'>University of Birkbeck London</p>
                     </div>
                     <p>Health and Clinical Psychological Sciences</p>
                 </div>
                 <div className='m-5'>
                     <p className='text-xl'>Bachelors Degree</p>
-                    <div className='flex justify-center items-center'>
-                        <img className='h-10 m-5' src="../../public/DU.png" alt="" />
+                    <div className='flex justify-center flex-col lg:flex-row md:flex-row items-center'>
+                        <img className='h-10 m-5' src="../../public/img/DU.png" alt="" />
                         <p className='text-lg'>University of Denver</p>
                     </div>
                     <p>Psychology & Emerging Digital Practices</p>
@@ -65,15 +65,15 @@ const Home = () => {
             <div className='flex flex-col justify-center'>
                 <h1 className='text-4xl m-5'>Certifications</h1>
                 <div className='flex flex-col justify-center m-5'>
-                    <div className='flex justify-center items-center'>
-                        <img className='h-10 m-5' src="../../public/ih.png" alt="" />
+                    <div  className='flex justify-center flex-col lg:flex-row md:flex-row items-center'>
+                        <img className='h-10 m-5' src="../../public/img/ih.png" alt="" />
                         <p className='text-xl'>Ironhack Web Development Immersive</p>
                     </div>
                     <p className='m-5'>Intensive web development bootcamp focusing on MERN stack</p>
                 </div>
                 <div className='m-5'>
-                    <div className='flex justify-center items-center'>
-                        <img className='h-10 m-5' src="../../public/gA2.png" alt="" />
+                    <div className='flex justify-center items-center flex-col lg:flex-row md:flex-row'>
+                        <img className='h-10 m-5' src="../../public/img/gA2.png" alt="" />
                         <p className='text-xl'>General Assembly Software Engineering Immersive</p>
                     </div>
                     <p className='m-5'>Intensive software engineering bootcamp focusing on MERN stack</p>
