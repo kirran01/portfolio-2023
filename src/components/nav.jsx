@@ -25,7 +25,7 @@ const Nav = () => {
         },
     };
     return (
-        <nav>
+        <nav className='fixed w-full'>
             <ul className='flex bg-slate-900 text-white justify-between'>
                 <li onClick={openModal} className='m-5 md:mr-20 lg:invisible md:invisible'>
                     <MenuIcon />
