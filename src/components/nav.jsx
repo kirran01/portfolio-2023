@@ -3,7 +3,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import Mobilenav from './mobilenav';
 import { useState } from 'react';
-import { Link, Router } from 'react-router-dom'
+import { Link, Router, useNavigate } from 'react-router-dom'
 
 const Nav = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
@@ -31,18 +31,18 @@ const Nav = () => {
                     <MenuIcon />
                 </li>
                 <div className='flex'>
-                    <Link className='m-5 cursor-pointer hidden lg:block md:block'>
+                    <a target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
                         Contact
-                    </Link>
-                    <Link className='m-5 cursor-pointer hidden lg:block md:block'>
+                    </a>
+                    <a href='https://www.github.com/kirran01' target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
                         Github
-                    </Link>
-                    <Link className='m-5 cursor-pointer hidden lg:block md:block'>
+                    </a>
+                    <a href='https://www.linkedin.com/in/kirran-kirpalani' target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
                         LinkedIn
-                    </Link>
-                    <Link className='m-5 cursor-pointer hidden lg:block md:block'>
+                    </a>
+                    <a href='https://drive.google.com/file/d/1cfbmCxL4uEmCLGvDSO4de-I3Sv7qrMOu/view' target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
                         Resume
-                    </Link>
+                    </a>
                 </div>
                 <li className='m-5'>
                     Kirran Kirpalani
