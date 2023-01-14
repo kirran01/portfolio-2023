@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Router } from 'react-router-dom'
 
 
-const Project = ({ project }) => {
+const Project = ({ project }) =>  {
 
     return (
         <div className='flex flex-col text-center items-center bg-white p-10 pt-2 pb-2 m-3 rounded-lg'>

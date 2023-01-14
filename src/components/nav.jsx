@@ -7,6 +7,16 @@ import { Link, Router, useNavigate } from 'react-router-dom'
 
 const Nav = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [copied, setCopied] = useState(false);
+    const copyContact = () => {
+        navigator.clipboard.writeText('Kirran-@live.com').then(() => {
+            setCopied(true);
+            setTimeout(() => {
+                setCopied(false);
+            }, 3000);
+        });
+    };
+
     function openModal() {
         setIsOpen(true);
     }
@@ -31,9 +41,10 @@ const Nav = () => {
                     <MenuIcon />
                 </li>
                 <div className='flex'>
-                    <a target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
+                    {!copied && <a onClick={copyContact} target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
                         Contact
-                    </a>
+                    </a>}
+                    {copied && <a className='m-5'>Email Copied!</a>}
                     <a href='https://www.github.com/kirran01' target="_blank" className='m-5 cursor-pointer hidden lg:block md:block'>
                         Github
                     </a>
