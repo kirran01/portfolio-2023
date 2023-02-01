@@ -7,6 +7,7 @@ import DUlogo from '../../public/img/DU.png'
 import Gameicon from '../../public/img/CONTROLLER.png'
 import Totoro from '../../public/img/TOTORO.png'
 import Taskmanage from '../../public/img/TASKS.png'
+import Ruby from '../../public/img/gam.png'
 
 const Home = () => {
     const projs = [
@@ -30,15 +31,22 @@ const Home = () => {
             image: Taskmanage,
             repo: 'https://github.com/kirran01/planner-frontend',
             site: 'https://task-manager-kk.netlify.app/'
+        },
+        {
+            title: 'Memory Game',
+            stack: 'ReactJS, TailwindCSS',
+            image: Ruby,
+            repo: 'https://github.com/kirran01/Memory-Game',
+            site: 'https://memory-game-kk.netlify.app/'
         }
     ]
     return (
-        <div className='bg-slate-200 p-5 pt-24 text-center'>
+        <div className='flex flex-col items-center bg-slate-200 py-5 pt-24 text-center'>
             <h1 className='text-6xl mb-5 ml-5'>Hello! I'm Kirran :)</h1>
             <h5>- Web Developer</h5>
             <p className='m-5'>I'm a Full-stack developer, based in Miami-Florida and I'm looking to grow and join a new team! My development stack includes: MongoDb, Express, React, Javascript and Express</p>
             <h1 className='text-xl m-5'>Recent Work</h1>
-            <div className='flex flex-col md:flex-row lg:flex-row justify-center bg-slate-300 rounded'>
+            <div className='flex flex-col flex-wrap w-fit md:flex-row lg:flex-row justify-center bg-slate-300 rounded'>
                 {
                     projs.map(proj => {
                         return (
