@@ -20,10 +20,10 @@ const Home = () => {
         },
         {
             title: 'Studio Ghibli Archive',
-            stack: 'HTML5, CSS3, NodeJS, HBS, Express, MongoDB',
+            stack: 'ReactJS, TailwindCSS',
             image: Totoro,
-            repo: 'https://github.com/kirran01/Studio-Ghibli-Archive',
-            site: 'https://ghibliarchive.fly.dev/'
+            repo: 'https://github.com/kirran01/Ghibli-front',
+            site: 'https://silver-crostata-bb4757.netlify.app/'
         },
         {
             title: 'Task Manager',
