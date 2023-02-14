@@ -20,7 +20,7 @@ const Home = () => {
         },
         {
             title: 'Studio Ghibli Archive',
-            stack: 'ReactJS, TailwindCSS',
+            stack: 'React, TailwindCSS, MongoDB',
             image: Totoro,
             repo: 'https://github.com/kirran01/Ghibli-front',
             site: 'https://silver-crostata-bb4757.netlify.app/'
