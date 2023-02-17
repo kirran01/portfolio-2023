@@ -26,11 +26,11 @@ const Home = () => {
             site: 'https://silver-crostata-bb4757.netlify.app/'
         },
         {
-            title: 'Task Manager',
-            stack: 'ReactJS, CSS3, NodeJs, Express, MongoDB',
+            title: 'Help Desk',
+            stack: 'ReactJS, TailwindCSS, NodeJs, Express, MongoDB',
             image: Taskmanage,
-            repo: 'https://github.com/kirran01/planner-frontend',
-            site: 'https://task-manager-kk.netlify.app/'
+            repo: 'https://github.com/kirran01/stealthfront',
+            site: 'https://bejewelled-sunflower-449f28.netlify.app/'
         },
         {
             title: 'Memory Game',
