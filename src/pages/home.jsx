@@ -42,9 +42,9 @@ const Home = () => {
     ]
     return (
         <div className='flex flex-col items-center bg-slate-200 py-5 pt-24 text-center'>
-            <h1 className='text-6xl mb-5 ml-5'>Hello! I'm Kirran :)</h1>
-            <h5>- Web Developer</h5>
-            <p className='m-5'>I'm a Full-stack developer, based in Miami-Florida and I'm looking to grow and join a new team! My development stack includes: MongoDb, Express, React, Javascript and Express</p>
+            <h1 className='text-6xl mb-5 ml-5'>Hello! I'm Kirran.</h1>
+            <h5>- FullStack React Web Developer</h5>
+            <p className='m-5'>I'm a Full-stack developer. Dual US/EU Citizen, currently based in Miami-Florida. I'm looking to grow and join a new team! My development stack includes: MongoDb, Express, React, NodeJS and Express</p>
             <h1 className='text-xl m-5'>Recent Work</h1>
             <div className='flex flex-col flex-wrap w-fit md:flex-row lg:flex-row justify-center bg-slate-300 rounded'>
                 {
